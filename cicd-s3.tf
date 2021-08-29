@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "codepipeline_artifacts" {
-  bucket = "aws-cicd-p"
+  bucket = "pipeline-artifacts-yinka"
   acl    = "private"
 } 
