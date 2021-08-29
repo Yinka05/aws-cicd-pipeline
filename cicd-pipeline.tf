@@ -70,7 +70,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
             output_artifacts = ["tf-code"]
             configuration = {
                 FullRepositoryId = "Yinka05/aws-cicd-pipeline"
-                BranchName   = "terraform"
+                BranchName   = "main"
                 ConnectionArn = var.codestar_connector_credentials
                 OutputArtifactFormat = "CODE_ZIP"
             }
